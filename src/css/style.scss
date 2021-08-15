@@ -4,16 +4,121 @@
 @use "./base/fonts";
 @use "../icons/style.css";
 
+/* base styles */
+
 html {
   font-size: 62.5%;
 }
 
-$oranje: orange;
-body {
-  margin: 10px;
+#container {
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
-h1 {
-  color: $oranje;
-  font-size: 30px;
-  margin: 50px 0;
+
+/*  animals styles */
+
+#animals {
+  width: 100%;
+  min-height: calc(100vh - 115px);
+  padding: 10px 20px 5px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.animal {
+  width: 130px;
+  height: 130px;
+  background-color: $yellow;
+  // margin: 26px 80px;
+  margin: 26px 80px 58px 80px;
+  border: 5px solid white;
+  border-radius: 4px;
+  transition: all 0.1s ease;
+  cursor: grab;
+}
+
+.animal img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.animal kbd {
+  color: $yellow;
+  font-family: "Londrina Solid", cursive;
+  font-size: 5rem;
+  display: block;
+  padding-top: 15px;
+}
+
+.playing {
+  border: 10px solid $yellow;
+  border-radius: 4px;
+  transform: scale(1.1);
+}
+
+/* footer styles */
+
+footer {
+  font-family: "Londrina Solid", cursive;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  color: #049bdd;
+  height: 115px;
+}
+
+footer h1 {
+  font-size: 5rem;
+  width: 250px;
+}
+
+footer p {
+  font-size: 4.5rem;
+  /* color: #fd8029; */
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+footer span {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #363f4c;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 1000px) {
+  .animal kbd {
+    display: none;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  .animal {
+    margin: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 729px) {
+  .animal {
+    margin: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  #animals {
+    padding: 5px;
+  }
 }

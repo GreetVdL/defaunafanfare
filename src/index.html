@@ -1,15 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- <link href="" rel="shortcut icon" type="image/x-icon" /> -->
+    <meta
+      name="description"
+      content="DE FAUNA FANFARE: een dierengeluiden instrument voor kleine en grote kinderen."
+    />
+    <meta name="author" content="Greet Van der Linden" />
+    <title>DE FAUNA FANFARE</title>
+    <link href="./images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   </head>
   <body>
     <!-- <include src="./symbol-defs.svg"></include> -->
+    <div id="container">
+      <div id="animals">
+        <div data-key="65" class="animal">
+          <img src="./images/eend.jpg" alt="drawing of a duck" /><kbd>A</kbd>
+        </div>
+        <div data-key="90" class="animal">
+          <img src="./images/geit.jpg" alt="drawing of a goat" /><kbd>Z</kbd>
+        </div>
+        <div data-key="69" class="animal">
+          <img src="./images/haan.jpg" alt="drawing of a rooster" /><kbd>E</kbd>
+        </div>
+        <div data-key="82" class="animal">
+          <img src="./images/hond.jpg" alt="drawing of a dog" /><kbd>R</kbd>
+        </div>
+        <div data-key="84" class="animal">
+          <img src="./images/kat.jpg" alt="drawing of a cat" /><kbd>T</kbd>
+        </div>
+        <div data-key="89" class="animal">
+          <img src="./images/kikker.jpg" alt="drawing of a frog" /><kbd>Y</kbd>
+        </div>
+        <div data-key="85" class="animal">
+          <img src="./images/kip.jpg" alt="drawing of a chicken" /><kbd>U</kbd>
+        </div>
+        <div data-key="73" class="animal">
+          <img src="./images/koe.jpg" alt="drawing of a cow" /><kbd>I</kbd>
+        </div>
+        <div data-key="79" class="animal">
+          <img src="./images/paard.jpg" alt="drawing of a horse" /><kbd>O</kbd>
+        </div>
+        <div data-key="80" class="animal">
+          <img src="./images/schaap.jpg" alt="drawing of a scheep" /><kbd
+            >P</kbd
+          >
+        </div>
+        <div data-key="81" class="animal">
+          <img src="./images/stier.jpg" alt="drawing of a bull" /><kbd>Q</kbd>
+        </div>
+        <div data-key="83" class="animal">
+          <img src="./images/uil.jpg" alt="drawing of an owl" /><kbd>S</kbd>
+        </div>
+        <div data-key="68" class="animal">
+          <img src="./images/varken.jpg" alt="drawing of a pig" /><kbd>D</kbd>
+        </div>
+        <div data-key="70" class="animal">
+          <img src="./images/vogel.jpg" alt="drawing of birds in a nest" /><kbd
+            >F</kbd
+          >
+        </div>
+      </div>
+      <footer>
+        <h1>
+          DE&nbsp;FAUNA<br />FANFARE<br /><span
+            >&copy; Greet Van der Linden</span
+          >
+        </h1>
+        <p>Druk op de corresponderende toetsen om de dieren te laten spelen.</p>
+      </footer>
+    </div>
 
+    <audio data-key="65" src="./sounds/ingekort/eend.mp3"></audio>
+    <audio data-key="90" src="./sounds/ingekort/geit.mp3"></audio>
+    <audio data-key="69" src="./sounds/ingekort/haan.mp3"></audio>
+    <audio data-key="82" src="./sounds/ingekort/hond.mp3"></audio>
+    <audio data-key="84" src="./sounds/ingekort/kat.mp3"></audio>
+    <audio data-key="89" src="./sounds/ingekort/kikker.mp3"></audio>
+    <audio data-key="85" src="./sounds/ingekort/kip.mp3"></audio>
+    <audio data-key="73" src="./sounds/ingekort/koe.mp3"></audio>
+    <audio data-key="79" src="./sounds/ingekort/paard.mp3"></audio>
+    <audio data-key="80" src="./sounds/ingekort/schaap.mp3"></audio>
+    <audio data-key="81" src="./sounds/ingekort/stier.mp3"></audio>
+    <audio data-key="83" src="./sounds/ingekort/uil.mp3"></audio>
+    <audio data-key="68" src="./sounds/ingekort/varken.mp3"></audio>
+    <audio data-key="70" src="./sounds/ingekort/vogel.mp3"></audio>
     <script src="./js/index.js"></script>
   </body>
 </html>
