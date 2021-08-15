@@ -97,6 +97,18 @@ footer span {
 
 /* responsive styles */
 
+@media screen and (max-width: 1489px) {
+  .animal {
+    margin: 26px 60px 58px 60px;
+  }
+}
+
+@media screen and (max-width: 1289px) {
+  .animal {
+    margin: 26px 50px 58px 50px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .animal kbd {
     display: none;
