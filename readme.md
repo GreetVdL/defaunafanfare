@@ -4,4 +4,6 @@
 
 ## An animal sounds instrument
 
-An [app](https://defaunafanfare.vercel.app/) made with vanilla js to make the animals play their sound on keypress or when the image is clicked. The website is mobile friendly.
+[https://defaunafanfare.vercel.app/](https://defaunafanfare.vercel.app/)
+
+A web app made with vanilla js to make the animals play their sound on keypress or when the image is clicked. The website is mobile friendly.
