@@ -15,6 +15,7 @@ defaunafanfare.code-workspace
 
 # next.js
 /.next/
+/out/
 
 # production
 /build

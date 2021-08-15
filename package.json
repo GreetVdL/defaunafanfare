@@ -5,7 +5,9 @@
     "build": "npm run clean && parcel build ./src/index.html --dist-dir ./out --no-source-maps",
     "clean": "rm -rf ./.parcel-cache ./dist ./out",
     "serve": "live-server ./out",
-    "deploy": "surge ./out --domain https://defaunafanfare.surge.sh"
+    "deploy": "surge ./out --domain https://defaunafanfare.surge.sh",
+    "hostinger-remove": "ssh -p 65002 u710250649@109.106.246.51 'rm domains/defaunafanfare.com/public_html/*'",
+    "hostinger-deploy": "scp -P 65002 ./out/* u710250649@109.106.246.51:domains/defaunafanfare.com/public_html/"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
