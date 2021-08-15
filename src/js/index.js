@@ -40,7 +40,7 @@ images.forEach(function (img) {
   new Image().src = img;
 });
 
-// function to make animals make sound on corresponding keypress
+// function to make the animals make their sound on corresponding keypress
 
 function keypressForSound(e) {
   const playedAudio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -53,11 +53,10 @@ function keypressForSound(e) {
 
   playedAudio.onended = function () {
     pressedKey.classList.remove("playing");
-    console.log("audio now ended");
   };
 }
 
-// function to make animals make sound when clicked
+// function to make the animals make their sound when clicked
 
 function clickForSound() {
   const animalButtons = document.querySelectorAll(".animal");
